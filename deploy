@@ -1,0 +1,8 @@
+-#!/bin/sh      
+sshpass -p cateina@123 ssh cateina@34.208.13.4 <<EOF        
+ cd /home/cateina/aws-test-jenkins 
+ git pull       
+ npm install --production       
+ pm2 restart all
+ exit       
+EOF
